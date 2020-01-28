@@ -13,6 +13,7 @@ BuildArch:      noarch
 
 BuildRequires:  python-devel
 BuildRequires:  python-test
+BuildRequires:  python3dist(setuptools)
 %{?python_provide:%python_provide python-%{srcname}}
 
 %description
