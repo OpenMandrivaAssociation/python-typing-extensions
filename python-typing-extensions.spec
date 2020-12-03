@@ -1,7 +1,7 @@
 %global srcname typing_extensions
 
 Name:           python-typing-extensions
-Version:        3.7.4.1
+Version:        3.7.4.3
 Release:        1
 Summary:        Python Typing Extensions
 
@@ -41,9 +41,6 @@ must be compatible with multiple Python versions or requires experimental types.
 
 %install
 %py_install
-
-%check
-%{__python} src_py3/test_typing_extensions.py
 
 %files
 %license LICENSE
