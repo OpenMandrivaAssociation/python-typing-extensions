@@ -1,19 +1,16 @@
 %global srcname typing_extensions
 
-Name:           python-typing-extensions
-Version:        3.7.4.3
-Release:        1
-Summary:        Python Typing Extensions
-
-License:        Python
-URL:            https://pypi.org/project/typing-extensions/
-Source0:        https://files.pythonhosted.org/packages/e7/dd/f1713bc6638cc3a6a23735eff6ee09393b44b96176d3296693ada272a80b/typing_extensions-%{version}.tar.gz
-
-BuildArch:      noarch
-
-BuildRequires:  python-devel
-BuildRequires:  python-test
-BuildRequires:  python3dist(setuptools)
+Name:		python-typing-extensions
+Version:	3.7.4.3
+Release:	2
+Summary:	Python Typing Extensions
+License:	Python
+URL:		https://pypi.org/project/typing-extensions/
+Source0:	https://files.pythonhosted.org/packages/e7/dd/f1713bc6638cc3a6a23735eff6ee09393b44b96176d3296693ada272a80b/typing_extensions-%{version}.tar.gz
+BuildArch:	noarch
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python-test
+BuildRequires:	python3dist(setuptools)
 %{?python_provide:%python_provide python-%{srcname}}
 
 %description
@@ -47,4 +44,3 @@ must be compatible with multiple Python versions or requires experimental types.
 %doc README.rst
 %{python_sitelib}/%{srcname}-*.egg-info/
 %{python_sitelib}/%{srcname}.py
-%{python_sitelib}/__pycache__/*
