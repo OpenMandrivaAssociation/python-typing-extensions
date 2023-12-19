@@ -1,5 +1,5 @@
 Name:		python-typing-extensions
-Version:	4.8.0
+Version:	4.9.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/t/typing-extensions/typing_extensions-%{version}.tar.gz
 Summary:	Backported and Experimental Type Hints for Python 3.7+
