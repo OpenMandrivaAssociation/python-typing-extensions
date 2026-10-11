@@ -1,12 +1,13 @@
 Name:		python-typing-extensions
 Version:	4.16.0
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/t/typing-extensions/typing_extensions-%{version}.tar.gz
 Summary:	Backported and Experimental Type Hints for Python 3.9+
 URL:		https://pypi.org/project/typing-extensions/
 License:	GPL
 Group:		Development/Python
 BuildRequires:	python
+BuildRequires:	python%{pyver}dist(flit-core)
 BuildSystem:	python
 BuildArch:	noarch
 
